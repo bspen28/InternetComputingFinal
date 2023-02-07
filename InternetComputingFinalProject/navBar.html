@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+    <nav class="navbar navbar-expand-lg navbar-light" style = "background-color: #fde3e9; font-size: 25px;">
+    <div class="collapse navbar-collapse" >
+      <div class="navbar-nav" id="navBar">
+        <a class="navbar-brand" id = "title" style = "font-size: 45px; color: blueviolet; font-weight:bolder; font-family:Verdana, Geneva, Tahoma, sans-serif">
+          <img src="https://www.pikpng.com/pngl/b/94-944417_the-directory-of-japanese-arts-and-culture-in.png" 
+          width="60" height="60" class="d-inline-block align-top">
+          NotCanvas
+        </a>
+        <a class="nav-link" href="student_homepage.php">Home</a>
+        <a class="nav-link" href="account.php">Account</a>
+        <a class="nav-link" href="grades.php">Student Records</a>
+        <a class="nav-link" href="logout.php">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
+</html>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+
+</script>
+<style>
+  #navBar .active{
+    color: 	#136fb4;
+    font-size: 36px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+</style>
